@@ -40,9 +40,14 @@
   function Calculator(num1, num2, operator) {
     num1 = Number(document.getElementById("Num1Button").value);
     num2 = String(document.getElementById("Num2Button").value);
-    operator = String(document.getElementById("operator")).value;
+    operator = String(document.getElementById("operator").value);
+    let result;
     console.log("oer", operator);
-    if (operator == "+") return num1 + num2;
+    if (operator == "+"){
+        result = num1+num2;
+         return num1 + num2
+        }
+
     else if (operator == "-") return num1 - num2;
     else if (operator == "*") return num1 * num2;
     else if (operator == "/") return num1 / num2;
