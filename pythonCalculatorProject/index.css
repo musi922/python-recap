@@ -1,0 +1,49 @@
+.numrow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background:cadetblue;
+    height: 400px;
+    width: 30%;
+    float: left;
+    border: 2px solid white;
+    margin: 5% 35% 0% 35%;
+    border-radius: 10%;
+    padding: 40px;
+}
+
+.numinput{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 5%;
+    cursor:pointer;
+}
+.Num1Button{
+  height: 40px;
+  border: 2px solid coral;
+  padding-left:20px;
+}
+
+.additioncolumn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.addition{
+        margin-top: 5%;
+    height: 40px;
+    width: 70px;
+   border: 2px solid white;
+   cursor: pointer;
+   background:coral;
+   color:white;
+}
+.result{
+    margin-top: 5%;
+    height: 40px;
+    width: 92%;
+   border: 2px solid coral;
+   background:white;
+   color: coral;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script href="index.js"></script>
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="numrow">
+      <div class="numinput">
+        <input
+          class="Num1Button"
+          id="Num1Button"
+          placeholder="Enter Number 1"
+          required
+          autofocus
+        />
+        <input
+          class="Num1Button"
+          id="Num2Button"
+          placeholder="Enter Number 2"
+          required
+        />
+      </div>
+      <p class="result" id="output">Result</p>
+      <div class="additioncolumn">
+        <button id="operator" class="addition" onclick="Calculator()">+</button>
+        <button id="operator" class="addition" onclick="Calculator()">X</button>
+        <button id="operator" class="addition" onclick="Calculator()">-</button>
+        <button id="operator" class="addition" onclick="Calculator()">/</button>
+        <button id="operator" class="addition" onclick="Calculator()">^</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function Calculator(num1, num2, operator) {
+    num1 = Number(document.getElementById("Num1Button").value);
+    num2 = String(document.getElementById("Num2Button").value);
+    operator = String(document.getElementById("operator")).value;
+    console.log("oer", operator);
+    if (operator == "+") return num1 + num2;
+    else if (operator == "-") return num1 - num2;
+    else if (operator == "*") return num1 * num2;
+    else if (operator == "/") return num1 / num2;
+    else if (operator == "^") return num1 ^ num2;
+    else return "Invalid Operator";
+  }
+</script>
