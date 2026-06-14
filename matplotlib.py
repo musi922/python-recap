@@ -5,8 +5,10 @@ df = pd.read_excel(file)
 plt.scatter(df.index,df["Gender"])
 plt.ylabel("GENDER")
 plt.xlabel("INDEX")
-plt.show()
 
+
+plt.bar(df.index,df["CAT"].values)
+plt.show()
 
 
 
